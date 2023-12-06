@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Airline Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="header-container">
+        <h3>Airline Recommendation</h3>
+    </div>
+
+    <h2 class="output-heading">Prediction:</h2>
+    <div class="output-container">
+        <p class="output-text" id="prediction-result">
+            {% if prediction_result == 0 %}
+            Not Recommended
+            {% elif prediction_result == 1 %}
+            Recommended
+            {% else %}
+            Prediction data missing or invalid.
+            {% endif %}
+        </p>
+    </div>
+</body>
+
+</html>
