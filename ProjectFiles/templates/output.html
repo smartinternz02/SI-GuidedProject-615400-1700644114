@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Reviews Classification</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+    <div class="form-box">
+        <h3>Airline Recommendation</h3>
+        <h2 class="output-heading">Prediction:</h2>
+        <div class="output-container">
+            <p class="output-text" id="prediction-result">
+                {% if prediction_result == 0 %}
+                Not Recommended
+                {% elif prediction_result == 1 %}
+                Recommended
+                {% else %}
+                Prediction data missing or invalid.
+                {% endif %}
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

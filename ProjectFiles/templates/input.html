@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airline Reviews Classification</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="form-box">
+      <h3>Airline Recommendation</h3>
+      <form action="/predict" method="post">
+        <!--<label for="Review">Enter Review:</label>-->
+        <input type="text" id="Review" name="Review" placeholder="Enter Review">
+        <!--<label for="Overall_Rating">Enter Overall Rating:</label>-->
+        <input type="text" id="Overall_Rating" name="Overall_Rating" placeholder="Enter Overall Rating">
+        <!--<label for="Cabin_Staff_Service">Enter Cabin Staff Service:</label>-->
+        <input type="text" id="Cabin_Staff_Service" name="Cabin_Staff_Service" placeholder="Enter Cabin Staff Service">
+        <!--<label for="Food_Beverages">Enter Food & Beverages:</label>-->
+        <input type="text" id="Food_Beverages" name="Food_Beverages" placeholder="Enter Food & Beverages">
+        <button type="submit" value="Predict" class="btn btn-primary btn-block btn-large">Predict</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
